@@ -44,7 +44,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       //backgroundColor: const Color(0xffC4DFCB),
-      backgroundColor: Color.fromRGBO(15, 20, 100, 1),
+      backgroundColor: const Color(0xffC4DFCB),
       appBar: AppBar(
         leading: Icon(
           Icons.menu,
