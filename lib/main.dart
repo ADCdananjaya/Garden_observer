@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
     const Page1(),
     const Page2(),
     const Page3(),
-    const Page4(),
+    //const Page4(),
   ];
 
   @override
@@ -102,10 +102,10 @@ class _HomePageState extends State<HomePage> {
             enableFeedback: false,
             onPressed: () {
               setState(() {
-                pageIndex = 2;
+                pageIndex = 1;
               });
             },
-            icon: pageIndex == 2
+            icon: pageIndex == 1
                 ? const Icon(
                     Icons.message_rounded,
                     color: Colors.white,
@@ -121,10 +121,10 @@ class _HomePageState extends State<HomePage> {
             enableFeedback: false,
             onPressed: () {
               setState(() {
-                pageIndex = 1;
+                pageIndex = 2;
               });
             },
-            icon: pageIndex == 1
+            icon: pageIndex == 2
                 ? const Icon(
                     Icons.widgets_outlined,
                     color: Colors.white,
@@ -136,6 +136,7 @@ class _HomePageState extends State<HomePage> {
                     size: 35,
                   ),
           ),
+          /*
           IconButton(
             enableFeedback: false,
             onPressed: () {
@@ -155,6 +156,7 @@ class _HomePageState extends State<HomePage> {
                     size: 35,
                   ),
           ),
+          */
         ],
       ),
     );
@@ -224,6 +226,7 @@ class Page3 extends StatelessWidget {
   }
 }
 
+/*
 class Page4 extends StatelessWidget {
   const Page4({Key? key}) : super(key: key);
 
@@ -244,3 +247,4 @@ class Page4 extends StatelessWidget {
     );
   }
 }
+*/
