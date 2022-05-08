@@ -102,10 +102,10 @@ class _HomePageState extends State<HomePage> {
             enableFeedback: false,
             onPressed: () {
               setState(() {
-                pageIndex = 1;
+                pageIndex = 2;
               });
             },
-            icon: pageIndex == 1
+            icon: pageIndex == 2
                 ? const Icon(
                     Icons.message_rounded,
                     color: Colors.white,
@@ -121,10 +121,10 @@ class _HomePageState extends State<HomePage> {
             enableFeedback: false,
             onPressed: () {
               setState(() {
-                pageIndex = 2;
+                pageIndex = 1;
               });
             },
-            icon: pageIndex == 2
+            icon: pageIndex == 1
                 ? const Icon(
                     Icons.widgets_outlined,
                     color: Colors.white,
