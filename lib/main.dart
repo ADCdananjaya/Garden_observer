@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Theme.of(context).primaryColorDark,
       ),
       body: pages[pageIndex],
       bottomNavigationBar: buildMyNavBar(context),
