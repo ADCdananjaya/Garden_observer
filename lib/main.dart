@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                     size: 35,
                   )
                 : const Icon(
-                    Icons.widgets_outlined,
+                    Icons.widgets_rounded,
                     color: Colors.white,
                     size: 35,
                   ),
