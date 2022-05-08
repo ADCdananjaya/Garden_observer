@@ -24,6 +24,11 @@ class SideBar extends StatelessWidget {
             ),
           ),
           ListTile(
+            leading: Icon(Icons.person),
+            title: Text('About'),
+            onTap: () => null,
+          ),
+          ListTile(
             leading: Icon(Icons.exit_to_app),
             title: Text('Sign Out'),
             onTap: () => null,
