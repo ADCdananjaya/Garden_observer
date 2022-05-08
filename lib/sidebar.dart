@@ -23,6 +23,7 @@ class SideBar extends StatelessWidget {
               color: Colors.blue,
             ),
           ),
+          Divider(),
           ListTile(
             leading: Icon(Icons.person),
             title: Text('About'),
