@@ -107,12 +107,12 @@ class _HomePageState extends State<HomePage> {
             },
             icon: pageIndex == 1
                 ? const Icon(
-                    Icons.person_rounded,
+                    Icons.home_rounded,
                     color: Colors.white,
                     size: 35,
                   )
                 : const Icon(
-                    Icons.home_outlined,
+                    Icons.person_outlined,
                     color: Colors.white,
                     size: 35,
                   ),
