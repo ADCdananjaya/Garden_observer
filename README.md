@@ -1,4 +1,4 @@
-# hello_world
+# Garden Observer
 
 A new Flutter project.
 
