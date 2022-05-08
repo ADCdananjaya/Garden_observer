@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helloworld/sidebar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bottom NavBar Demo',
+      title: 'Garden Observer',
       theme: ThemeData(
         primaryColor: const Color(0xffF9F9F9),
         splashColor: Colors.transparent,
@@ -43,6 +44,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: SideBar(),
       //backgroundColor: const Color(0xffC4DFCB),
       backgroundColor: const Color(0xffF9F9F9),
       appBar: AppBar(
