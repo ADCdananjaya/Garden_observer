@@ -49,13 +49,6 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: const Color(0xffF9F9F9),
 
       appBar: AppBar(
-        /*
-        leading: Icon(
-          Icons.menu,
-          //color: Theme.of(context).primaryColorDark,
-          color: Colors.white,
-        ),
-        */
         title: Text(
           "Garden Observer",
           style: TextStyle(
