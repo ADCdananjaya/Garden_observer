@@ -174,7 +174,7 @@ class Page1 extends StatelessWidget {
         child: Text(
           "Page Number 1",
           style: TextStyle(
-            color: Colors.lightBlue[900],
+            color: Colors.black[900],
             fontSize: 45,
             fontWeight: FontWeight.w500,
           ),
