@@ -150,9 +150,9 @@ class Page1 extends StatelessWidget {
       color: const Color(0xffC4DFCB),
       child: Center(
         child: Text(
-          "Page Number 1",
+          "Home Page",
           style: TextStyle(
-            color: Colors.greenAccent[900],
+            color: Colors.black,
             fontSize: 45,
             fontWeight: FontWeight.w500,
           ),
@@ -171,7 +171,7 @@ class Page2 extends StatelessWidget {
       color: const Color(0xffC4DFCB),
       child: Center(
         child: Text(
-          "Page Number 2",
+          "Staff Page",
           style: TextStyle(
             color: Colors.green[900],
             fontSize: 45,
@@ -192,7 +192,7 @@ class Page3 extends StatelessWidget {
       color: const Color(0xffC4DFCB),
       child: Center(
         child: Text(
-          "Page Number 3",
+          "Chat Page",
           style: TextStyle(
             color: Colors.green[900],
             fontSize: 45,
