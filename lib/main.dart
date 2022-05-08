@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         leading: Icon(
           Icons.menu,
-          color: Theme.of(context).primaryColor,
+          color: Theme.of(context).primaryColorDark,
         ),
         title: Text(
           "Garden Observer",
