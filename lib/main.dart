@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // A widget which will be started on application startup
-      home: MyHomePage(title: 'Home'),
     );
   }
 }
@@ -25,12 +24,12 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         // The title text which will be shown on the action bar
-        title: Text(title),
+        title: Text('nav bar'),
       ),
       bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home), backgroundColor: Colors.blue),
-        BottomNavigationBarItem(icon: Icon(Icons.person), backgroundColor: Colors.red),
-        BottomNavigationBarItem(icon: Icon(Icons.message), backgroundColor: Colors.yellow),
+        const BottomNavigationBarItem(icon: Icon(Icons.home), backgroundColor: Colors.blue),
+        const BottomNavigationBarItem(icon: Icon(Icons.person), backgroundColor: Colors.red),
+        const BottomNavigationBarItem(icon: Icon(Icons.message), backgroundColor: Colors.yellow),
       ]),
     );
   }
