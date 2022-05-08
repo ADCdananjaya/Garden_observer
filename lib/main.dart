@@ -171,7 +171,7 @@ class Page2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xffC4DFCB),
+      color: const Color(0xffF9F9F9),
       child: Center(
         child: Text(
           "Staff Page",
