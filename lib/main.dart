@@ -27,7 +27,11 @@ class MyHomePage extends StatelessWidget {
         // The title text which will be shown on the action bar
         title: Text(title),
       ),
-      body: Text('Home'),
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home), backgroundColor: Colors.blue),
+        BottomNavigationBarItem(icon: Icon(Icons.person), backgroundColor: Colors.red),
+        BottomNavigationBarItem(icon: Icon(Icons.message), backgroundColor: Colors.yellow),
+      ]),
     );
   }
 }
