@@ -19,6 +19,13 @@ class SideBar extends StatelessWidget {
                 ),
               ),
             ),
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(
+                  'https://images.pexels.com/photos/409696/pexels-photo-409696.jpeg',
+                ),
+              ),
+            ),
           )
         ],
       ),
