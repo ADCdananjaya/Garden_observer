@@ -22,7 +22,12 @@ class SideBar extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.blue,
             ),
-          )
+          ),
+          ListTile(
+            leading: Icon(Icons.exit_to_app),
+            title: Text('Sign Out'),
+            onTap: () => null,
+          ),
         ],
       ),
     );
