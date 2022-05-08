@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bottom NavBar Demo',
       theme: ThemeData(
-        primaryColor: const Color(0xFF442B2D),
+        primaryColor: const Color(0xffF9F9F9),
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         hoverColor: Colors.transparent,
@@ -150,7 +150,7 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xffC4DFCB),
+      color: const Color(0xffF9F9F9),
       child: Center(
         child: Text(
           "Home Page",
@@ -192,7 +192,7 @@ class Page3 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xffC4DFCB),
+      color: const Color(0xffF9F9F9),
       child: Center(
         child: Text(
           "Chat Page",
