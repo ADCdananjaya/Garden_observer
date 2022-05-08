@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bottom NavBar Demo',
       theme: ThemeData(
-        primaryColor: const Color(0xff2F8D46),
+        primaryColor: const Color(0xFF442B2D),
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         hoverColor: Colors.transparent,
