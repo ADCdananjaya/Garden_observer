@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
           color: Theme.of(context).primaryColor,
         ),
         title: Text(
-          "Geeks For Geeks",
+          "Garden Observer",
           style: TextStyle(
             color: Theme.of(context).primaryColor,
             fontSize: 25,
