@@ -10,6 +10,13 @@ class AboutUs extends StatelessWidget {
         height: 130,
       );
 
+  Widget image() => Column(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          Text("FlutLab is on your service!"),
+        ],
+      );
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,14 +37,7 @@ class AboutUs extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            Text(
-              'Garden Observer',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
-            ),
+            image(),
           ],
         ),
       ),
