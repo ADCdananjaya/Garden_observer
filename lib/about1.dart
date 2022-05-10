@@ -17,7 +17,7 @@ class AboutUs1 extends StatelessWidget {
         title: Text('About'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
+        //mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           buidImage(),
