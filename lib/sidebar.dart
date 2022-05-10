@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/about.dart';
+import 'package:helloworld/about1.dart';
 
 class SideBar extends StatelessWidget {
   const SideBar({Key? key}) : super(key: key);
@@ -29,7 +30,7 @@ class SideBar extends StatelessWidget {
             leading: Icon(Icons.person),
             title: Text('About'),
             onTap: () {
-              Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutUs()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context) => AboutUs1()));
             },
           ),
           ListTile(
