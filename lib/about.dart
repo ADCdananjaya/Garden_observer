@@ -11,6 +11,7 @@ class AboutUs extends StatelessWidget {
       body: Column(
         children: [
           Text("This is a about us page!"),
+          Text("this is a new text!"),
         ],
       ),
     );
