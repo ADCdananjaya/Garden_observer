@@ -30,6 +30,14 @@ class AboutUs extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
+            Text(
+              'Garden Observer',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Colors.black,
+              ),
+            ),
           ],
         ),
       ),
