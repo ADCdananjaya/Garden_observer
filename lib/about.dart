@@ -8,11 +8,14 @@ class AboutUs extends StatelessWidget {
       appBar: AppBar(
         title: Text('About'),
       ),
-      body: Row(
-        children: [
-          Text("This is a about us page!"),
-          Text("this is a new text!"),
-        ],
+      body: Padding(
+        padding: EdgeInsets.all(12),
+        child: Card(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+            side: BorderSide(color: Colors.black, width: 2),
+          ),
+        ),
       ),
     );
   }
