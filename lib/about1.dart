@@ -24,8 +24,6 @@ class AboutUs1 extends StatelessWidget {
             buidImage(),
           ],
         ),
-        //mainAxisAlignment: MainAxisAlignment.start,
-        //crossAxisAlignment: CrossAxisAlignment.center,
       ),
     );
   }
