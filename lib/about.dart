@@ -19,7 +19,7 @@ class AboutUs extends StatelessWidget {
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
-            side: BorderSide(color: Colors.black, width: 22),
+            side: BorderSide(color: Colors.black, width: 2),
           ),
           child: SingleChildScrollView(
             physics: BouncingScrollPhysics(),
