@@ -11,8 +11,9 @@ class AboutUs extends StatelessWidget {
       );
 
   Widget image() => Column(
-        mainAxisAlignment: MainAxisAlignment.end,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          buidImage(),
           Text("FlutLab is on your service!"),
         ],
       );
@@ -25,6 +26,12 @@ class AboutUs extends StatelessWidget {
       ),
       body: Padding(
         padding: EdgeInsets.all(12),
+        child: Column(
+          children: [
+            image(),
+          ],
+        ),
+        /*
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -40,6 +47,7 @@ class AboutUs extends StatelessWidget {
             image(),
           ],
         ),
+        */
       ),
     );
   }
