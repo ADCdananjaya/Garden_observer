@@ -37,7 +37,7 @@ class SideBar extends StatelessWidget {
             title: Text('Sign Out'),
             onTap: () => null,
           ),
-          SizedBox(height: 6.0),
+          SizedBox(height: 26.0),
           ListTile(
             title: Text('Project Group 6'),
           ),
