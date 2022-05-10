@@ -8,7 +8,7 @@ class AboutUs extends StatelessWidget {
       appBar: AppBar(
         title: Text('About'),
       ),
-      body: Column(
+      body: Row(
         children: [
           Text("This is a about us page!"),
           Text("this is a new text!"),
