@@ -16,7 +16,7 @@ class AboutUs1 extends StatelessWidget {
       appBar: AppBar(
         title: Text('About'),
       ),
-      body: Row(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           buidImage(),
