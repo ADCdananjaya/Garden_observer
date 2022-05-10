@@ -18,7 +18,7 @@ class AboutUs1 extends StatelessWidget {
       ),
       body: Column(
         //mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        //crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           buidImage(),
         ],
