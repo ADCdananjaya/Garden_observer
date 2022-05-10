@@ -15,7 +15,7 @@ class AboutUs extends StatelessWidget {
         title: Text('About'),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(),
+        padding: EdgeInsets.symmetric(vertical: 8.0),
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
