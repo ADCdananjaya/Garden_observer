@@ -18,5 +18,12 @@ class AboutUs extends StatelessWidget {
         ),
       ),
     );
+
+    Widget buidImage() => Image.network(
+          'https://cdn3.iconfinder.com/data/icons/agriculture-farming-and-gardening-vol-6/90/Save_Plantsc7-1024.png',
+          fit: BoxFit.cover,
+          width: 100,
+          height: 100,
+        );
   }
 }
