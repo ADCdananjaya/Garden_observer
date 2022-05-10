@@ -16,12 +16,16 @@ class AboutUs1 extends StatelessWidget {
       appBar: AppBar(
         title: Text('About'),
       ),
-      body: Column(
+      body: Padding(
+        padding: EdgeInsets.all(12),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            buidImage(),
+          ],
+        ),
         //mainAxisAlignment: MainAxisAlignment.start,
         //crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          buidImage(),
-        ],
       ),
     );
   }
