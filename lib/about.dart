@@ -27,6 +27,7 @@ class AboutUs extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.all(12),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             image(),
           ],
