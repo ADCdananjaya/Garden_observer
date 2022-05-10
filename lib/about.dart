@@ -11,7 +11,7 @@ class AboutUs extends StatelessWidget {
       );
 
   Widget image() => Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
           buidImage(),
           Text("FlutLab is on your service!"),
