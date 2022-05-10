@@ -10,14 +10,6 @@ class AboutUs extends StatelessWidget {
         height: 130,
       );
 
-  Widget image() => Column(
-        mainAxisAlignment: MainAxisAlignment.end,
-        children: <Widget>[
-          buidImage(),
-          Text("FlutLab is on your service!"),
-        ],
-      );
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,14 +18,6 @@ class AboutUs extends StatelessWidget {
       ),
       body: Padding(
         padding: EdgeInsets.all(12),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.end,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            image(),
-          ],
-        ),
-        /*
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -46,10 +30,8 @@ class AboutUs extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            image(),
           ],
         ),
-        */
       ),
     );
   }
