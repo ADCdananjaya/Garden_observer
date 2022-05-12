@@ -1,7 +1,8 @@
 import 'dart:io';
-
+import 'package:flutter/gestures.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutUs extends StatelessWidget {
   const AboutUs({Key? key}) : super(key: key);
@@ -51,7 +52,7 @@ class AboutUs extends StatelessWidget {
                   ),
                   Text(
                     'Project Group 6',
-                    textAlign: TextAlign.center,
+                    //textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.normal,
@@ -85,6 +86,7 @@ class AboutUs extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
+                  /*
                   Text(
                     'Send feedback >',
                     textAlign: TextAlign.center,
@@ -92,6 +94,28 @@ class AboutUs extends StatelessWidget {
                       fontSize: 18,
                       fontWeight: FontWeight.normal,
                       color: Colors.lightBlue,
+                    ),
+                  ),
+                  */
+                  RichText(
+                    text: TextSpan(
+                      text: 'Send feedBack >',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.lightBlue,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () async {
+                          //print('button clicked!');
+                          String url = 'https://forms.gle/xPu1PhxHGoUg6z6bA';
+                          var urlLaunchable = await canLaunch(url);
+                          if (urlLaunchable) {
+                            await launch(url);
+                          } else {
+                            print('URL can\'t be launched');
+                          }
+                        },
                     ),
                   ),
                 ],
