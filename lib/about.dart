@@ -30,26 +30,32 @@ class AboutUs extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            Row(
-              children: <Widget>[
-                Text(
-                  'Author',
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.black,
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.only(
+                top: 20.0,
+              ),
+              child: Row(
+                children: <Widget>[
+                  Text(
+                    'Author',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
                   ),
-                ),
-                Text(
-                  'Project Group 6',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.black,
+                  Text(
+                    'Project Group 6',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.black,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ],
         ),
