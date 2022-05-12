@@ -51,13 +51,14 @@ class AboutUs extends StatelessWidget {
                   ),
                   Text(
                     'Project Group 6',
-                    textAlign: TextAlign.center,
+                    //textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.normal,
                       color: Colors.black,
                     ),
                   ),
+                  Link(),
                 ],
               ),
             ),
