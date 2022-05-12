@@ -30,7 +30,6 @@ class AboutUs extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            SizedBox.square(10),
             Text(
               'Group Members',
               textAlign: TextAlign.start,
