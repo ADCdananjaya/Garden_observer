@@ -9,7 +9,7 @@ class Page1 extends StatelessWidget {
       color: const Color(0xffF9F9F9),
       child: Center(
         child: Text(
-          "Home Page",
+          "new Home Page",
           style: TextStyle(
             color: Colors.greenAccent[900],
             fontSize: 45,
