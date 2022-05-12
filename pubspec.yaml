@@ -20,6 +20,9 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #use link widget
+  url_launcher: ^6.1.2
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
