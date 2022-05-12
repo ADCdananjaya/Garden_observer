@@ -58,7 +58,7 @@ class AboutUs extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
-                  Link(),
+                  //Link(),
                 ],
               ),
             ),
