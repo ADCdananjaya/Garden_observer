@@ -33,7 +33,7 @@ class AboutUs extends StatelessWidget {
             Container(
               width: double.infinity,
               margin: EdgeInsets.only(
-                top: 20.0,
+                top: 35.0,
               ),
               child: Row(
                 children: <Widget>[
