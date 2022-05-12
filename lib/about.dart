@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -83,6 +85,7 @@ class AboutUs extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
+                  /*
                   Text(
                     'Send feedback >',
                     textAlign: TextAlign.center,
@@ -92,6 +95,8 @@ class AboutUs extends StatelessWidget {
                       color: Colors.lightBlue,
                     ),
                   ),
+                  */
+                  Center(child: Link()),
                 ],
               ),
             ),
