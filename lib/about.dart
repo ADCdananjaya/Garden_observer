@@ -37,6 +37,7 @@ class AboutUs extends StatelessWidget {
               ),
               padding: EdgeInsets.all(10.0),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
                   Text(
                     'Author',
