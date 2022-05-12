@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:flutter/gestures.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -85,6 +85,7 @@ class AboutUs extends StatelessWidget {
                       color: Colors.black,
                     ),
                   ),
+                  /*
                   Text(
                     'Send feedback >',
                     textAlign: TextAlign.center,
@@ -92,6 +93,21 @@ class AboutUs extends StatelessWidget {
                       fontSize: 18,
                       fontWeight: FontWeight.normal,
                       color: Colors.lightBlue,
+                    ),
+                  ),
+                  */
+                  RichText(
+                    text: TextSpan(
+                      text: 'Send feedBack >',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.lightBlue,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          print('button clicked!');
+                        },
                     ),
                   ),
                 ],
