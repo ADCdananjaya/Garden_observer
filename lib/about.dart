@@ -89,7 +89,7 @@ class AboutUs extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.normal,
-                      color: Colors.black,
+                      color: Colors.lightBlue,
                     ),
                   ),
                 ],
