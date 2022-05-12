@@ -40,6 +40,15 @@ class AboutUs extends StatelessWidget {
                     color: Colors.black,
                   ),
                 ),
+                Text(
+                  'Project Group 6',
+                  textAlign: TextAlign.end,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.black,
+                  ),
+                ),
               ],
             ),
           ],
