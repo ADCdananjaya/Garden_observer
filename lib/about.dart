@@ -66,6 +66,35 @@ class AboutUs extends StatelessWidget {
               indent: 10,
               endIndent: 10,
             ),
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.only(
+                bottom: 10.0,
+              ),
+              padding: EdgeInsets.all(10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Text(
+                    'Support',
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black,
+                    ),
+                  ),
+                  Text(
+                    'Send feedback >',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.black,
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ],
         ),
       ),
