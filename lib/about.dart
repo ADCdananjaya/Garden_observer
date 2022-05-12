@@ -35,6 +35,7 @@ class AboutUs extends StatelessWidget {
               margin: EdgeInsets.only(
                 top: 35.0,
               ),
+              padding: EdgeInsets.all(10.0),
               child: Row(
                 children: <Widget>[
                   Text(
