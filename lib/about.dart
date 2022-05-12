@@ -59,6 +59,13 @@ class AboutUs extends StatelessWidget {
                 ],
               ),
             ),
+            Divider(
+              color: Colors.black,
+              height: 20,
+              thickness: 2,
+              indent: 10,
+              endIndent: 10,
+            ),
           ],
         ),
       ),
