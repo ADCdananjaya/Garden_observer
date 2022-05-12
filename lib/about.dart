@@ -2,6 +2,7 @@ import 'dart:io';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class AboutUs extends StatelessWidget {
   const AboutUs({Key? key}) : super(key: key);
@@ -105,8 +106,15 @@ class AboutUs extends StatelessWidget {
                         color: Colors.lightBlue,
                       ),
                       recognizer: TapGestureRecognizer()
-                        ..onTap = () {
-                          print('button clicked!');
+                        ..onTap = () async {
+                          //print('button clicked!');
+                          String url = 'https://forms.gle/xPu1PhxHGoUg6z6bA';
+                          var urlLaunchable = await canLaunch(url);
+                          if (urlLaunchable) {
+                            await launch(url);
+                          } else {
+                            print('URL can\'t be launched');
+                          }
                         },
                     ),
                   ),
