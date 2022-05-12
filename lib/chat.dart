@@ -9,7 +9,7 @@ class Page3 extends StatelessWidget {
       color: const Color(0xffF9F9F9),
       child: Center(
         child: Text(
-          "new Chat Page",
+          "Chat Page",
           style: TextStyle(
             color: Colors.greenAccent[900],
             fontSize: 45,
