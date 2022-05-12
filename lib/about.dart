@@ -69,7 +69,7 @@ class AboutUs extends StatelessWidget {
             Container(
               width: double.infinity,
               margin: EdgeInsets.only(
-                bottom: 10.0,
+                bottom: 5.0,
               ),
               padding: EdgeInsets.all(10.0),
               child: Row(
