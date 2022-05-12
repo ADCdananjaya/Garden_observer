@@ -21,7 +21,7 @@ class AboutUs extends StatelessWidget {
         //padding: EdgeInsets.all(12),
         child: Column(
           //mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             buidImage(),
             Text(
