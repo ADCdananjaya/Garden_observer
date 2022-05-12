@@ -30,14 +30,17 @@ class AboutUs extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            Text(
-              'Group Members',
-              textAlign: TextAlign.start,
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold,
-                color: Colors.black,
-              ),
+            Row(
+              children: <Widget>[
+                Text(
+                  'Author',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black,
+                  ),
+                ),
+              ],
             ),
           ],
         ),
