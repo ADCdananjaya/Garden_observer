@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helloworld/sidebar.dart';
+import 'package:helloworld/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -142,6 +143,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
+/*
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
 
@@ -162,7 +164,7 @@ class Page1 extends StatelessWidget {
     );
   }
 }
-
+*/
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
 
