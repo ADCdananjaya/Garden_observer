@@ -70,6 +70,7 @@ class Page1 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           buildCard(),
+          buildCard(),
         ],
       ),
     );
