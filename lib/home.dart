@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:helloworld/moistureLevels.dart';
+import 'package:helloworld/npkLevels.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
@@ -10,10 +11,10 @@ class Page1 extends StatelessWidget {
   static const cardImage2 = NetworkImage('https://cdn.pixabay.com/photo/2016/09/01/19/34/grown-up-1637302_960_720.jpg');
   static const supportingText2 = 'NPK levels';
 
-  GestureDetector buildCard1(var cardImage, var supportingText) {
+  GestureDetector buildCard1(var cardImage, var supportingText, var context) {
     return GestureDetector(
       onTap: () => {
-        print('clicked'),
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Moisture())),
       },
       child: Card(
           elevation: 4.0,
@@ -46,7 +47,7 @@ class Page1 extends StatelessWidget {
   GestureDetector buildCard2(var cardImage, var supportingText, var context) {
     return GestureDetector(
       onTap: () => {
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Moisture())),
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => NPK())),
       },
       child: Card(
           elevation: 4.0,
@@ -85,7 +86,7 @@ class Page1 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          buildCard1(cardImage1, supportingText1),
+          buildCard1(cardImage1, supportingText1, context),
           Divider(),
           buildCard2(cardImage2, supportingText2, context),
         ],
