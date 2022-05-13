@@ -34,7 +34,14 @@ class Page1 extends StatelessWidget {
             Container(
               padding: EdgeInsets.all(16.0),
               alignment: Alignment.centerLeft,
-              child: Text(supportingText),
+              child: Text(
+                supportingText,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.black,
+                ),
+              ),
             ),
             /*
             ButtonBar(
