@@ -12,11 +12,13 @@ class Page1 extends StatelessWidget {
         elevation: 4.0,
         child: Column(
           children: [
+            /*
             ListTile(
               title: Text(heading),
               subtitle: Text(subheading),
               trailing: Icon(Icons.favorite_outline),
             ),
+            */
             Container(
               height: 200.0,
               child: Ink.image(
