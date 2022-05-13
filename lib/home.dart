@@ -20,7 +20,7 @@ class Page1 extends StatelessWidget {
             ),
             */
             Container(
-              height: 200.0,
+              height: 150.0,
               child: Ink.image(
                 image: cardImage,
                 fit: BoxFit.cover,
