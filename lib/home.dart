@@ -5,7 +5,7 @@ class Page1 extends StatelessWidget {
 
   static const cardImage1 = NetworkImage('https://cdn.pixabay.com/photo/2014/05/07/21/41/drip-339940_960_720.jpg');
   static const supportingText1 = 'Moisture levels';
-  static const cardImage2 = NetworkImage('https://source.unsplash.com/random/800x600?house');
+  static const cardImage2 = NetworkImage('https://cdn.pixabay.com/photo/2016/09/01/19/34/grown-up-1637302_960_720.jpg');
   static const supportingText2 = 'NPK levels';
 
   Card buildCard(var cardImage, var supportingText) {
