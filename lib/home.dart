@@ -14,6 +14,7 @@ class Page1 extends StatelessWidget {
             color: Colors.greenAccent[900],
             fontSize: 45,
             fontWeight: FontWeight.w500,
+            backgroundColor: Colors.blue,
           ),
         ),
       ),
