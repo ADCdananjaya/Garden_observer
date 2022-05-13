@@ -6,7 +6,8 @@ class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: const Color(0xffF9F9F9),
+      //color: const Color(0xffF9F9F9),
+      color: Colors.blue,
       child: Center(
         child: Text(
           "Home Page",
