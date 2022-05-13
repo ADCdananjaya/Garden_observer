@@ -31,22 +31,24 @@ class Page1 extends StatelessWidget {
               alignment: Alignment.centerLeft,
               child: Text(supportingText),
             ),
+            /*
             ButtonBar(
               children: [
                 TextButton(
                   child: const Text('CONTACT AGENT'),
                   onPressed: () {
-                    /* ... */
+                   
                   },
                 ),
                 TextButton(
                   child: const Text('LEARN MORE'),
                   onPressed: () {
-                    /* ... */
+                    
                   },
                 )
               ],
             )
+            */
           ],
         ));
   }
