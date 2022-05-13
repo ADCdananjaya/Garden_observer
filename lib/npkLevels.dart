@@ -6,13 +6,14 @@ class NPK extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Moisture levels'),
+        title: Text('NPK levels'),
       ),
       body: Container(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Center(
-              child: Text('Moisture levels'),
+              child: Text('NPK levels'),
             ),
           ],
         ),
