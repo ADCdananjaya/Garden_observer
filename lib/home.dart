@@ -73,6 +73,7 @@ class Page1 extends StatelessWidget {
       */
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           buildCard(),
           buildCard(),
