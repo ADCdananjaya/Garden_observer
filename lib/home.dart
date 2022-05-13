@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
+import 'package:helloworld/moistureLevels.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
@@ -42,10 +43,10 @@ class Page1 extends StatelessWidget {
     );
   }
 
-  GestureDetector buildCard2(var cardImage, var supportingText) {
+  GestureDetector buildCard2(var cardImage, var supportingText, var context) {
     return GestureDetector(
       onTap: () => {
-        print('clicked'),
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => Moisture())),
       },
       child: Card(
           elevation: 4.0,
@@ -86,7 +87,7 @@ class Page1 extends StatelessWidget {
         children: [
           buildCard1(cardImage1, supportingText1),
           Divider(),
-          buildCard2(cardImage2, supportingText2),
+          buildCard2(cardImage2, supportingText2, context),
         ],
       ),
     );
