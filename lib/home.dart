@@ -11,7 +11,9 @@ class Page1 extends StatelessWidget {
 
   GestureDetector buildCard(var cardImage, var supportingText) {
     return GestureDetector(
-      onTap: () => {},
+      onTap: () => {
+        print('clicked'),
+      },
       child: Card(
           elevation: 4.0,
           child: Column(
