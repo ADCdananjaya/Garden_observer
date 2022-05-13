@@ -4,7 +4,9 @@ class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
 
   static const cardImage1 = NetworkImage('https://source.unsplash.com/random/800x600?house');
-  static const supportingText1 = 'Beautiful home to rent, recently refurbished with modern appliances...';
+  static const supportingText1 = 'Moisture levels';
+  static const cardImage2 = NetworkImage('https://source.unsplash.com/random/800x600?house');
+  static const supportingText2 = 'NPK levels';
 
   Card buildCard(var cardImage, var supportingText) {
     //var heading = '\$2300 per month';
@@ -80,7 +82,7 @@ class Page1 extends StatelessWidget {
         children: [
           buildCard(cardImage1, supportingText1),
           Divider(),
-          buildCard(cardImage1, supportingText1),
+          buildCard(cardImage2, supportingText2),
         ],
       ),
     );
