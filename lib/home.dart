@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
@@ -8,32 +9,35 @@ class Page1 extends StatelessWidget {
   static const cardImage2 = NetworkImage('https://cdn.pixabay.com/photo/2016/09/01/19/34/grown-up-1637302_960_720.jpg');
   static const supportingText2 = 'NPK levels';
 
-  Card buildCard(var cardImage, var supportingText) {
-    return Card(
-        elevation: 4.0,
-        child: Column(
-          children: [
-            Container(
-              height: 150.0,
-              child: Ink.image(
-                image: cardImage,
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              padding: EdgeInsets.all(16.0),
-              alignment: Alignment.centerLeft,
-              child: Text(
-                supportingText,
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.normal,
-                  color: Colors.black,
+  GestureDetector buildCard(var cardImage, var supportingText) {
+    return GestureDetector(
+      onTap: () => {},
+      child: Card(
+          elevation: 4.0,
+          child: Column(
+            children: [
+              Container(
+                height: 150.0,
+                child: Ink.image(
+                  image: cardImage,
+                  fit: BoxFit.cover,
                 ),
               ),
-            ),
-          ],
-        ));
+              Container(
+                padding: EdgeInsets.all(16.0),
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  supportingText,
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.normal,
+                    color: Colors.black,
+                  ),
+                ),
+              ),
+            ],
+          )),
+    );
   }
 
   @override
