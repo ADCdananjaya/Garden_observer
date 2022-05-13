@@ -57,6 +57,7 @@ class Page1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: const Color(0xffF9F9F9),
+      padding: EdgeInsets.all(16.0),
       /*
       child: Center(
         child: Text(
