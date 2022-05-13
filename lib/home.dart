@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
 
-  static const cardImage1 = NetworkImage('https://source.unsplash.com/random/800x600?house');
+  static const cardImage1 = NetworkImage('https://cdn.pixabay.com/photo/2014/05/07/21/41/drip-339940_960_720.jpg');
   static const supportingText1 = 'Moisture levels';
   static const cardImage2 = NetworkImage('https://source.unsplash.com/random/800x600?house');
   static const supportingText2 = 'NPK levels';
