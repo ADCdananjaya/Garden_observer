@@ -38,7 +38,7 @@ class Page1 extends StatelessWidget {
                 supportingText,
                 style: TextStyle(
                   fontSize: 18,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.normal,
                   color: Colors.black,
                 ),
               ),
