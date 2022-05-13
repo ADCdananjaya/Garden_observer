@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
 
-  Card buildCard() {
+  static const cardImage1 = NetworkImage('https://source.unsplash.com/random/800x600?house');
+  static const supportingText1 = 'Beautiful home to rent, recently refurbished with modern appliances...';
+
+  Card buildCard(var cardImage, var supportingText) {
     //var heading = '\$2300 per month';
     //var subheading = '2 bed, 1 bath, 1300 sqft';
-    var cardImage = NetworkImage('https://source.unsplash.com/random/800x600?house');
-    var supportingText = 'Beautiful home to rent, recently refurbished with modern appliances...';
+    //var cardImage = NetworkImage('https://source.unsplash.com/random/800x600?house');
+    //var supportingText = 'Beautiful home to rent, recently refurbished with modern appliances...';
     return Card(
         elevation: 4.0,
         child: Column(
@@ -75,9 +78,9 @@ class Page1 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          buildCard(),
+          buildCard(cardImage1, supportingText1),
           Divider(),
-          buildCard(),
+          buildCard(cardImage1, supportingText1),
         ],
       ),
     );
