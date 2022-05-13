@@ -49,31 +49,34 @@ class Page1 extends StatelessWidget {
       onTap: () => {
         Navigator.of(context).push(MaterialPageRoute(builder: (context) => NPK())),
       },
-      child: Card(
-          elevation: 4.0,
-          child: Column(
-            children: [
-              Container(
-                height: 150.0,
-                child: Ink.image(
-                  image: cardImage,
-                  fit: BoxFit.cover,
-                ),
-              ),
-              Container(
-                padding: EdgeInsets.all(16.0),
-                alignment: Alignment.centerLeft,
-                child: Text(
-                  supportingText,
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.normal,
-                    color: Colors.black,
+      child: MouseRegion(
+        cursor: SystemMouseCursors.click,
+        child: Card(
+            elevation: 4.0,
+            child: Column(
+              children: [
+                Container(
+                  height: 150.0,
+                  child: Ink.image(
+                    image: cardImage,
+                    fit: BoxFit.cover,
                   ),
                 ),
-              ),
-            ],
-          )),
+                Container(
+                  padding: EdgeInsets.all(16.0),
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    supportingText,
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            )),
+      ),
     );
   }
 
