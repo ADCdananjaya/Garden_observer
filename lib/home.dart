@@ -37,7 +37,7 @@ class Page1 extends StatelessWidget {
               child: Text(
                 supportingText,
                 style: TextStyle(
-                  fontSize: 15,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Colors.black,
                 ),
