@@ -4,8 +4,8 @@ class Page1 extends StatelessWidget {
   const Page1({Key? key}) : super(key: key);
 
   Card buildCard() {
-    var heading = '\$2300 per month';
-    var subheading = '2 bed, 1 bath, 1300 sqft';
+    //var heading = '\$2300 per month';
+    //var subheading = '2 bed, 1 bath, 1300 sqft';
     var cardImage = NetworkImage('https://source.unsplash.com/random/800x600?house');
     var supportingText = 'Beautiful home to rent, recently refurbished with modern appliances...';
     return Card(
@@ -76,6 +76,7 @@ class Page1 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           buildCard(),
+          Divider(),
           buildCard(),
         ],
       ),
