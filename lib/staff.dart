@@ -23,6 +23,38 @@ class Page2 extends StatelessWidget {
         child: Column(
           children: [
             Container(
+              margin: EdgeInsets.only(
+                left: 12.0,
+                right: 12.0,
+                top: 12.0,
+              ),
+              height: 230,
+              child: Stack(
+                children: [
+                  Positioned(
+                    child: Material(
+                      child: Container(
+                        height: 180.0,
+                        width: double.infinity,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(8.0),
+                          boxShadow: [
+                            new BoxShadow(
+                              color: Colors.grey.withOpacity(0.3),
+                              offset: new Offset(-10.0, 10.0),
+                              blurRadius: 20.0,
+                              spreadRadius: 4.0,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
               margin: EdgeInsets.all(12.0),
               height: 230,
               child: Stack(
