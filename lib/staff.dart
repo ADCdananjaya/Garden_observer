@@ -22,6 +22,7 @@ class Page2 extends StatelessWidget {
       child: Column(
         children: [
           Container(
+            padding: EdgeInsets.all(5.0),
             height: 230,
             child: Stack(
               children: [
