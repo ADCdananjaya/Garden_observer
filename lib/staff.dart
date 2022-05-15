@@ -66,8 +66,8 @@ class Page2 extends StatelessWidget {
                           image: DecorationImage(
                             fit: BoxFit.fill,
                             //image: AssetImage('assets/chamod.jpg'),
-                            //image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/26/07/57/woman-1353825_960_720.png'),
-                            image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
+                            image: NetworkImage('https://www110.zippyshare.com/i/mnLugJNQ/49071/chamod.jpg'),
+                            //image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
                           ),
                         ),
                       ),
