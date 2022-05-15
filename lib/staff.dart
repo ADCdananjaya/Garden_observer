@@ -67,7 +67,7 @@ class Page2 extends StatelessWidget {
                             fit: BoxFit.fill,
                             //image: AssetImage('assets/chamod.jpg'),
                             //image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/26/07/57/woman-1353825_960_720.png'),
-                            image: NetworkImage('https://drive.google.com/file/d/1iwIJxGAtbypyHivLYnG8vBREgp3EMiRt/view?usp=sharing'),
+                            image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
                           ),
                         ),
                       ),
