@@ -51,6 +51,26 @@ class Page2 extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Positioned(
+                    child: Card(
+                      elevation: 10.0,
+                      shadowColor: Colors.grey.withOpacity(0.5),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Container(
+                        height: 200,
+                        width: 150,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          image: DecorationImage(
+                            fit: BoxFit.fill,
+                            image: AssetImage('images/chamod.jpg'),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
