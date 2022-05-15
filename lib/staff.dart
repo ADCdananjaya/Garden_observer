@@ -72,6 +72,25 @@ class Page2 extends StatelessWidget {
                       ),
                     ),
                   ),
+                  Positioned(
+                    top: 45,
+                    left: 160,
+                    child: Container(
+                      height: 150,
+                      width: 180,
+                      child: Column(
+                        children: [
+                          Text(
+                            'Chamod Dananjaya',
+                            style: TextStyle(
+                              fontSize: 20,
+                              color: Color(0xFF363f93),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
