@@ -34,7 +34,7 @@ class Page2 extends StatelessWidget {
                   Positioned(
                     child: Material(
                       child: Container(
-                        height: 180.0,
+                        height: 200.0,
                         width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
@@ -65,7 +65,6 @@ class Page2 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
                             fit: BoxFit.fill,
-                            //image: AssetImage('assets/chamod.jpg'),
                             image: NetworkImage('https://www110.zippyshare.com/i/mnLugJNQ/49071/chamod.jpg'),
                             //image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
                           ),
