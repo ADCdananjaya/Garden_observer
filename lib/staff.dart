@@ -85,6 +85,7 @@ class Page2 extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 20,
                               color: Color(0xFF363f93),
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
                         ],
