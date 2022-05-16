@@ -43,7 +43,7 @@ class Page2 extends StatelessWidget {
                     child: Material(
                       child: Container(
                         height: 210.0,
-                        width: screenWidth - 1,
+                        width: screenWidth * 0.9,
                         //width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
