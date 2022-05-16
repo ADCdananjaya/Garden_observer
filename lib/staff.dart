@@ -8,6 +8,9 @@ class Page2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Container(
       color: const Color(0xffF9F9F9),
       /*
@@ -38,7 +41,8 @@ class Page2 extends StatelessWidget {
                     child: Material(
                       child: Container(
                         height: 210.0,
-                        width: double.infinity,
+                        width: screenWidth - 1,
+                        //width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
                           borderRadius: BorderRadius.circular(8.0),
