@@ -40,12 +40,12 @@ class Page2 extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                    top: 35,
-                    left: 20,
+                    //top: 35,
+                    //left: 20,
                     child: Material(
                       child: Container(
                         height: 210.0,
-                        width: screenWidth * 0.9,
+                        width: screenWidth - 10,
                         //width: double.infinity,
                         decoration: BoxDecoration(
                           color: Colors.white,
