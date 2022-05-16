@@ -118,6 +118,9 @@ class Page2 extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                             ),
                           ),
+                          SizedBox(
+                            height: 10,
+                          ),
                           Row(
                             children: [
                               IconButton(
