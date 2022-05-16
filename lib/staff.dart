@@ -139,11 +139,13 @@ class Page2 extends StatelessWidget {
                                 icon: Icon(Icons.phone, color: Colors.blue),
                                 onPressed: () => launchCall(number: '0701404279'),
                               ),
+                              /*
                               IconButton(
                                 iconSize: 40,
                                 icon: changeColor(Icons.favorite, Colors.blue),
                                 onPressed: () => changeColor(Icons.favorite, Colors.red),
                               ),
+                              */
                             ],
                           ),
                         ],
