@@ -96,7 +96,7 @@ class Page2 extends StatelessWidget {
                           Text(
                             'Chamod',
                             style: TextStyle(
-                              fontSize: 22,
+                              fontSize: 25,
                               color: Color(0xFF363f93),
                               fontWeight: FontWeight.bold,
                             ),
