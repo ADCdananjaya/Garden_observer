@@ -94,7 +94,7 @@ class Page2 extends StatelessWidget {
                           Text(
                             'Chamod Dananjaya',
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 18,
                               color: Color(0xFF363f93),
                               fontWeight: FontWeight.bold,
                             ),
