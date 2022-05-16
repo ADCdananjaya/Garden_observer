@@ -47,7 +47,7 @@ class Page2 extends StatelessWidget {
                         width: screenWidth - 10,
                         //width: double.infinity,
                         decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.white38,
                           borderRadius: BorderRadius.circular(8.0),
                           boxShadow: [
                             new BoxShadow(
