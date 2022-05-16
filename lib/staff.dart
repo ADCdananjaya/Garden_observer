@@ -40,6 +40,7 @@ class Page2 extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
+                    top: 35,
                     child: Material(
                       child: Container(
                         height: 210.0,
