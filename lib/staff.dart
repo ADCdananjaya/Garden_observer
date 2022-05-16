@@ -90,6 +90,7 @@ class Page2 extends StatelessWidget {
                       height: 150,
                       width: 180,
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
                             'Chamod',
