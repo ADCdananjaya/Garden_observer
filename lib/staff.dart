@@ -107,6 +107,15 @@ class Page2 extends StatelessWidget {
                               fontWeight: FontWeight.normal,
                             ),
                           ),
+                          Divider(color: Colors.black),
+                          Text(
+                            'University of Kelaniya',
+                            style: TextStyle(
+                              fontSize: 15,
+                              color: Colors.blueGrey,
+                              fontWeight: FontWeight.normal,
+                            ),
+                          ),
                         ],
                       ),
                     ),
