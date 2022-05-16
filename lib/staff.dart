@@ -41,6 +41,7 @@ class Page2 extends StatelessWidget {
                 children: [
                   Positioned(
                     top: 35,
+                    left: 20,
                     child: Material(
                       child: Container(
                         height: 210.0,
