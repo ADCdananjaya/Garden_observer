@@ -90,7 +90,7 @@ class Page2 extends StatelessWidget {
                       height: 150,
                       width: 180,
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        //crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
