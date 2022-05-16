@@ -109,7 +109,7 @@ class Page2 extends StatelessWidget {
                           ),
                           Divider(color: Colors.black),
                           Text(
-                            'University of Kelaniya',
+                            'Project group 6',
                             style: TextStyle(
                               fontSize: 15,
                               color: Colors.blueGrey,
