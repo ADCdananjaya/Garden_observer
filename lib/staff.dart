@@ -141,7 +141,7 @@ class Page2 extends StatelessWidget {
                               ),
                               IconButton(
                                 iconSize: 40,
-                                icon: Icon(Icons.favorite, color: Colors.blue),
+                                icon: changeColor(Icons.favorite, Colors.blue),
                                 onPressed: () => print('button clicked'),
                               ),
                             ],
@@ -182,4 +182,11 @@ Future launchEmail({
 
 Future launchCall({required String number}) async {
   launch('tel://$number');
+}
+
+Icon changeColor(var iconName, var changeColor) {
+  return Icon(
+    iconName,
+    color: changeColor,
+  );
 }
