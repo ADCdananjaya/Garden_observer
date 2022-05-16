@@ -123,7 +123,7 @@ class Page2 extends StatelessWidget {
                             height: 5,
                           ),
                           Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               IconButton(
