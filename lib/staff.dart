@@ -6,9 +6,6 @@ Image myImage = Image(image: assetImage);
 class Page2 extends StatelessWidget {
   const Page2({Key? key}) : super(key: key);
 
-  //final AssetImage assetImage = AssetImage('images/chamod.jpg');
-  //final Image myImage = final Image(image: assetImage);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -82,8 +79,6 @@ class Page2 extends StatelessWidget {
                   Positioned(
                     top: 30,
                     left: 160,
-                    child: profileImage(myImage),
-                    /*
                     child: Container(
                       height: 150,
                       width: 180,
@@ -100,7 +95,6 @@ class Page2 extends StatelessWidget {
                         ],
                       ),
                     ),
-                    */
                   ),
                 ],
               ),
