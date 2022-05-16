@@ -103,7 +103,7 @@ class Page2 extends StatelessWidget {
                             'University of Kelaniya',
                             style: TextStyle(
                               fontSize: 15,
-                              color: Colors.bluegrey,
+                              color: Colors.blueGrey,
                               fontWeight: FontWeight.normal,
                             ),
                           ),
