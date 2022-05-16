@@ -142,7 +142,7 @@ class Page2 extends StatelessWidget {
                               ),
                               IconButton(
                                 iconSize: 40,
-                                icon: changeColor(Icons.facebook, Colors.blue),
+                                icon: Icon(Icons.facebook, color: Colors.blue),
                                 onPressed: () => changeColor(Icons.favorite, Colors.red),
                               ),
                             ],
