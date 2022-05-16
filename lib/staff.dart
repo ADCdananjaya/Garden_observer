@@ -92,9 +92,9 @@ class Page2 extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'Chamod Dananjaya',
+                            'Chamod',
                             style: TextStyle(
-                              fontSize: 18,
+                              fontSize: 22,
                               color: Color(0xFF363f93),
                               fontWeight: FontWeight.bold,
                             ),
