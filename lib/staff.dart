@@ -208,7 +208,7 @@ class Page2 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
-                            'Chamod',
+                            'Maneesha',
                             style: TextStyle(
                               fontSize: 25,
                               color: Color(0xFF363f93),
@@ -333,7 +333,7 @@ class Page2 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
-                            'Chamod',
+                            'Tharindu',
                             style: TextStyle(
                               fontSize: 25,
                               color: Color(0xFF363f93),
@@ -458,7 +458,7 @@ class Page2 extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
                           Text(
-                            'Chamod',
+                            'Malith',
                             style: TextStyle(
                               fontSize: 25,
                               color: Color(0xFF363f93),
