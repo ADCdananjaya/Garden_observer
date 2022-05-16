@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 AssetImage assetImage = AssetImage('images/chamod.jpg');
 Image myImage = Image(image: assetImage);
@@ -127,7 +128,11 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.mail, color: Colors.blue),
-                                onPressed: () => print('button clicked'),
+                                onPressed: () => launchEmail(
+                                  toEmail: 'chamoddananjaya49@gmail.com',
+                                  subject: '',
+                                  message: '',
+                                ),
                               ),
                               IconButton(
                                 iconSize: 40,
@@ -161,4 +166,16 @@ Container profileImage(var myImage) {
     height: 200,
     width: 150,
   );
+}
+
+Future launchEmail({
+  required String toEmail,
+  required String subject,
+  required String message,
+}) async {
+  final url = 'mailto:$toEmail?subject=${Uri.encodeFull(subject)}&body=${Uri.encodeFull(message)}';
+
+  if (await canLaunch(url)) {
+    await launch(url);
+  }
 }
