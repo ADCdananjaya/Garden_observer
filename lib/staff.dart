@@ -142,7 +142,7 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: changeColor(Icons.favorite, Colors.blue),
-                                onPressed: () => print('button clicked'),
+                                onPressed: () => changeColor(Icons.favorite, Colors.red),
                               ),
                             ],
                           ),
