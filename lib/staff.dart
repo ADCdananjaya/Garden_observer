@@ -137,7 +137,7 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.phone, color: Colors.blue),
-                                onPressed: () => print('button clicked'),
+                                onPressed: () => launchCall(number: '0701404279'),
                               ),
                               IconButton(
                                 iconSize: 40,
@@ -178,4 +178,8 @@ Future launchEmail({
   if (await canLaunch(url)) {
     await launch(url);
   }
+}
+
+Future launchCall({required String number}) async {
+  launch('tel://$number');
 }
