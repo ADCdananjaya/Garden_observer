@@ -51,7 +51,7 @@ class Page2 extends StatelessWidget {
                           boxShadow: [
                             new BoxShadow(
                               color: Colors.grey.withOpacity(0.3),
-                              offset: new Offset(-10.0, 10.0),
+                              offset: new Offset(10.0, 10.0),
                               blurRadius: 20.0,
                               spreadRadius: 4.0,
                             ),
