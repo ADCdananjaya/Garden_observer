@@ -143,7 +143,7 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.facebook, color: Colors.blue),
-                                onPressed: () => changeColor(Icons.favorite, Colors.red),
+                                onPressed: () => toFacebook(url: 'https://www.facebook.com/chamod.dananjaya.5/'),
                               ),
                             ],
                           ),
@@ -185,9 +185,11 @@ Future launchCall({required String number}) async {
   launch('tel://$number');
 }
 
-Icon changeColor(var iconName, var changeColor) {
-  return Icon(
-    iconName,
-    color: changeColor,
-  );
+Future toFacebook({required String url}) async {
+  var urlLaunchable = await canLaunch(url);
+  if (urlLaunchable) {
+    await launch(url);
+  } else {
+    print('URL can\'t be launched');
+  }
 }
