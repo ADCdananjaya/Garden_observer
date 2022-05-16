@@ -29,13 +29,11 @@ class Page2 extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              /*
               margin: EdgeInsets.only(
                 left: 12.0,
                 right: 12.0,
                 top: 12.0,
               ),
-              */
               height: 230,
               child: Stack(
                 children: [
