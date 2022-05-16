@@ -121,7 +121,7 @@ class Page2 extends StatelessWidget {
                           Row(
                             children: [
                               IconButton(
-                                iconSize: 50,
+                                iconSize: 20,
                                 icon: Icon(Icons.mail, color: Colors.blueAccent),
                                 onPressed: () => print('button clicked'),
                               ),
