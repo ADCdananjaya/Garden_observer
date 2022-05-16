@@ -128,6 +128,16 @@ class Page2 extends StatelessWidget {
                                 icon: Icon(Icons.mail, color: Colors.blue),
                                 onPressed: () => print('button clicked'),
                               ),
+                              IconButton(
+                                iconSize: 40,
+                                icon: Icon(Icons.phone, color: Colors.blue),
+                                onPressed: () => print('button clicked'),
+                              ),
+                              IconButton(
+                                iconSize: 40,
+                                icon: Icon(Icons.favorite, color: Colors.blue),
+                                onPressed: () => print('button clicked'),
+                              ),
                             ],
                           ),
                         ],
