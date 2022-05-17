@@ -28,7 +28,7 @@ class Page3 extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            Image.network('https://cdn.pixabay.com/photo/2017/06/20/08/12/maintenance-2422173_960_720.png'),
+            Image.network('https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408060_960_720.png'),
           ],
         ),
       ),
