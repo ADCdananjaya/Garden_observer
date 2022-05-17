@@ -19,9 +19,12 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  charts_flutter: ^0.12.0
   #use link widget
   url_launcher: ^6.1.2
+
+  #use charts
+  
 
 dev_dependencies:
   flutter_test:
