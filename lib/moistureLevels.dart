@@ -10,6 +10,7 @@ class Moisture extends StatelessWidget {
         title: Text('Moisture levels'),
       ),
       body: Container(
+        padding: EdgeInsets.all(10.0),
         child: Column(
           children: [
             Center(
