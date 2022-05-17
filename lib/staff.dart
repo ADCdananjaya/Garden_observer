@@ -243,7 +243,7 @@ class Page2 extends StatelessWidget {
                                 iconSize: 40,
                                 icon: Icon(Icons.mail, color: Colors.blue),
                                 onPressed: () => launchEmail(
-                                  toEmail: 'chamoddananjaya49@gmail.com',
+                                  toEmail: 'maneeshamaduranga22@gmail.com',
                                   subject: '',
                                   message: '',
                                 ),
@@ -251,7 +251,7 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.phone, color: Colors.blue),
-                                onPressed: () => launchCall(number: '0701404279'),
+                                onPressed: () => launchCall(number: '0763565630'),
                               ),
                               IconButton(
                                 iconSize: 40,
@@ -368,7 +368,7 @@ class Page2 extends StatelessWidget {
                                 iconSize: 40,
                                 icon: Icon(Icons.mail, color: Colors.blue),
                                 onPressed: () => launchEmail(
-                                  toEmail: 'chamoddananjaya49@gmail.com',
+                                  toEmail: 'aatm.tharindumadushan@gmail.com',
                                   subject: '',
                                   message: '',
                                 ),
@@ -376,12 +376,12 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.phone, color: Colors.blue),
-                                onPressed: () => launchCall(number: '0701404279'),
+                                onPressed: () => launchCall(number: '0766274063'),
                               ),
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.facebook, color: Colors.blue),
-                                onPressed: () => toFacebook(url: 'https://www.facebook.com/chamod.dananjaya.5/'),
+                                onPressed: () => toFacebook(url: 'https://www.facebook.com/profile.php?id=100010191430483'),
                               ),
                             ],
                           ),
@@ -493,7 +493,7 @@ class Page2 extends StatelessWidget {
                                 iconSize: 40,
                                 icon: Icon(Icons.mail, color: Colors.blue),
                                 onPressed: () => launchEmail(
-                                  toEmail: 'chamoddananjaya49@gmail.com',
+                                  toEmail: 'malithshehan1999@gmail.com',
                                   subject: '',
                                   message: '',
                                 ),
@@ -501,12 +501,12 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.phone, color: Colors.blue),
-                                onPressed: () => launchCall(number: '0701404279'),
+                                onPressed: () => launchCall(number: '0716190380'),
                               ),
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.facebook, color: Colors.blue),
-                                onPressed: () => toFacebook(url: 'https://www.facebook.com/chamod.dananjaya.5/'),
+                                onPressed: () => toFacebook(url: 'https://www.facebook.com/profile.php?id=100013738928346'),
                               ),
                             ],
                           ),
