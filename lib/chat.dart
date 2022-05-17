@@ -32,8 +32,8 @@ class Page3 extends StatelessWidget {
             ),
             Image.network(
               'https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408060_960_720.png',
-              height: 150,
-              width: 150,
+              height: 250,
+              width: 250,
             ),
           ],
         ),
