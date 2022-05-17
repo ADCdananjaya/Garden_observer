@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class Page3 extends StatelessWidget {
@@ -28,7 +30,11 @@ class Page3 extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            Image.network('https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408060_960_720.png'),
+            Image.network(
+              'https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408060_960_720.png',
+              height: 150,
+              width: 150,
+            ),
           ],
         ),
       ),
