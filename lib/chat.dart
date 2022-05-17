@@ -21,6 +21,7 @@ class Page3 extends StatelessWidget {
         ),
         */
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
               "Chat Page",
