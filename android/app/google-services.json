@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "686414276230",
+    "project_id": "garden-backend",
+    "storage_bucket": "garden-backend.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686414276230:android:a2ccda7a259460af5c5307",
+        "android_client_info": {
+          "package_name": "com.example.helloworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686414276230-5os540kn66p37iunvjtmm2son6746ute.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-Q-V1EHGJ-RDUFp7F-SKATmmXJ_qH5GI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686414276230-5os540kn66p37iunvjtmm2son6746ute.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
