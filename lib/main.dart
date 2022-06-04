@@ -3,6 +3,7 @@ import 'package:helloworld/sidebar.dart';
 import 'package:helloworld/home.dart';
 import 'package:helloworld/staff.dart';
 import 'package:helloworld/chat.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
