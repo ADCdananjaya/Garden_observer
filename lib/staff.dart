@@ -256,7 +256,7 @@ class Page2 extends StatelessWidget {
                               IconButton(
                                 iconSize: 40,
                                 icon: Icon(Icons.facebook, color: Colors.blue),
-                                onPressed: () => toFacebook(url: 'https://www.facebook.com/chamod.dananjaya.5/'),
+                                onPressed: () => toFacebook(url: 'https://www.facebook.com/profile.php?id=100082112372992'),
                               ),
                             ],
                           ),
