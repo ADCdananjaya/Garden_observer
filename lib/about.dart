@@ -108,7 +108,7 @@ class AboutUs extends StatelessWidget {
                       recognizer: TapGestureRecognizer()
                         ..onTap = () async {
                           //print('button clicked!');
-                          String url = 'https://forms.gle/xPu1PhxHGoUg6z6bA';
+                          String url = 'https://forms.gle/NAM4bUpVwTXSwct56';
                           var urlLaunchable = await canLaunch(url);
                           if (urlLaunchable) {
                             await launch(url);

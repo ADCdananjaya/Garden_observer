@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 class Page3 extends StatelessWidget {
@@ -8,6 +10,7 @@ class Page3 extends StatelessWidget {
     return Container(
       color: const Color(0xffF9F9F9),
       child: Center(
+        /*
         child: Text(
           "Chat Page",
           style: TextStyle(
@@ -15,6 +18,25 @@ class Page3 extends StatelessWidget {
             fontSize: 45,
             fontWeight: FontWeight.w500,
           ),
+        ),
+        */
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Chat Page",
+              style: TextStyle(
+                color: Colors.greenAccent[900],
+                fontSize: 45,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+            Image.network(
+              'https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408060_960_720.png',
+              height: 250,
+              width: 250,
+            ),
+          ],
         ),
       ),
     );
