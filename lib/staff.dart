@@ -64,8 +64,8 @@ class Page2 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            //image: AssetImage('images/chamod.jpg'),
-                            image: NetworkImage('https://www37.zippyshare.com/i/3CNHqHvZ/24986/IMG_20220221_2004.png'),
+                            image: AssetImage('images/chamod1.png'),
+                            //image: NetworkImage('https://www37.zippyshare.com/i/3CNHqHvZ/24986/IMG_20220221_2004.png'),
                             //image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
                           ),
                         ),
