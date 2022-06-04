@@ -189,8 +189,8 @@ class Page2 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            //image: AssetImage('images/chamod.jpg'),
-                            image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png'),
+                            image: AssetImage('images/madurangaya.png'),
+                            //image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png'),
                             //image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
                           ),
                         ),
@@ -314,8 +314,8 @@ class Page2 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            //image: AssetImage('images/chamod.jpg'),
-                            image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png'),
+                            image: AssetImage('images/tharinduwa.png'),
+                            //image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png'),
                             //image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
                           ),
                         ),
@@ -439,8 +439,8 @@ class Page2 extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10.0),
                           image: DecorationImage(
                             fit: BoxFit.cover,
-                            //image: AssetImage('images/chamod.jpg'),
-                            image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png'),
+                            image: AssetImage('images/malitha.jpg'),
+                            //image: NetworkImage('https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png'),
                             //image: NetworkImage('https://www48.zippyshare.com/i/tDVsMMbb/17294/IMG-20220503-WA0016.jpg'),
                           ),
                         ),
