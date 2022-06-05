@@ -37,7 +37,7 @@ class SalesData {
 }
 
 final data = [
-  new SalesData(0, 1500000),
+  new SalesData(0, 1600000),
   new SalesData(1, 1735000),
   new SalesData(2, 1678000),
   new SalesData(3, 1890000),
