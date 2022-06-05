@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 /*
 class NPK extends StatelessWidget {
@@ -30,6 +32,22 @@ class NPK extends StatefulWidget {
 }
 
 class _NPKState extends State<NPK> {
+  List<String> years = [];
+
+  Future getYear() async {
+    await FirebaseFirestore.instance.collection('sales').get().then(
+          (snapshot) => snapshot.docs.forEach((element) {
+            print(element.reference);
+          }),
+        );
+  }
+
+  @override
+  void initState() {
+    getYear();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
