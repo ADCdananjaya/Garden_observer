@@ -3,8 +3,11 @@ import 'package:helloworld/sidebar.dart';
 import 'package:helloworld/home.dart';
 import 'package:helloworld/staff.dart';
 import 'package:helloworld/chat.dart';
+//import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+void main() async {
+  //WidgetsFlutterBinding.ensureInitialized();
+  //await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
