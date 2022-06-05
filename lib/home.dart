@@ -50,7 +50,7 @@ class Page1 extends StatelessWidget {
   GestureDetector buildCard2(var cardImage, var supportingText, var context) {
     return GestureDetector(
       onTap: () => {
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) => SalesHomePage())),
+        Navigator.of(context).push(MaterialPageRoute(builder: (context) => NPK())),
       },
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
