@@ -62,7 +62,7 @@ class _NPKState extends State<NPK> {
                 // The red line
                 LineChartBarData(
                   spots: dummyData1,
-                  isCurved: true,
+                  isCurved: false,
                   barWidth: 3,
                   /*colors: [
                     Colors.red,
