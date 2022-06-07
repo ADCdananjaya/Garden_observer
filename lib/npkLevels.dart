@@ -64,25 +64,21 @@ class _NPKState extends State<NPK> {
                   spots: dummyData1,
                   isCurved: false,
                   barWidth: 3,
-                  /*colors: [
-                    Colors.red,
-                  ],*/
+                  color: Colors.blueAccent,
                 ),
                 // The orange line
                 LineChartBarData(
                   spots: dummyData2,
                   isCurved: false,
                   barWidth: 3,
-                  /*colors: [
-                    Colors.orange,
-                  ],*/
+                  color: Colors.yellowAccent,
                 ),
                 // The blue line
                 LineChartBarData(
                   spots: dummyData3,
                   isCurved: false,
                   barWidth: 3,
-                  color: Colors.red,
+                  color: Colors.greenAccent,
                   /*colors: [
                     Colors.blue,
                   ],*/
