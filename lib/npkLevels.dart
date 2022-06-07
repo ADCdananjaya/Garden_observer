@@ -48,6 +48,9 @@ class _NPKState extends State<NPK> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('NPK levels'),
+      ),
       body: SafeArea(
         child: Container(
           padding: const EdgeInsets.all(20),
