@@ -82,6 +82,7 @@ class _NPKState extends State<NPK> {
                   spots: dummyData3,
                   isCurved: false,
                   barWidth: 3,
+                  color: Colors.red,
                   /*colors: [
                     Colors.blue,
                   ],*/
