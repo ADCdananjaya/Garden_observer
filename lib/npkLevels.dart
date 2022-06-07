@@ -54,9 +54,9 @@ class _NPKState extends State<NPK> {
       body: SafeArea(
         child: Column(
           children: [
-            Center(
+            /*Center(
               child: Text('NPK levels'),
-            ),
+            ),*/
             Container(
               padding: const EdgeInsets.all(10),
               width: double.infinity,
