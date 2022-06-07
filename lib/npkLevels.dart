@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
+import 'dart:math';
+import 'package:fl_chart/fl_chart.dart';
 
 /*
 class NPK extends StatelessWidget {
@@ -25,43 +25,67 @@ class NPK extends StatelessWidget {
   }
 }
 */
-
 class NPK extends StatefulWidget {
   const NPK({Key? key}) : super(key: key);
   _NPKState createState() => _NPKState();
 }
 
 class _NPKState extends State<NPK> {
-  List<String> years = [];
+  final List<FlSpot> dummyData1 = List.generate(8, (index) {
+    return FlSpot(index.toDouble(), index * Random().nextDouble());
+  });
 
-  Future getYear() async {
-    await FirebaseFirestore.instance.collection('sales').get().then(
-          (snapshot) => snapshot.docs.forEach((element) {
-            print(element.reference);
-          }),
-        );
-  }
+  // This will be used to draw the orange line
+  final List<FlSpot> dummyData2 = List.generate(8, (index) {
+    return FlSpot(index.toDouble(), index * Random().nextDouble());
+  });
 
-  @override
-  void initState() {
-    getYear();
-    super.initState();
-  }
+  // This will be used to draw the blue line
+  final List<FlSpot> dummyData3 = List.generate(8, (index) {
+    return FlSpot(index.toDouble(), index * Random().nextDouble());
+  });
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('NPK levels'),
-      ),
-      body: Container(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Center(
-              child: Text('NPK levels'),
+      body: SafeArea(
+        child: Container(
+          padding: const EdgeInsets.all(20),
+          width: double.infinity,
+          child: LineChart(
+            LineChartData(
+              borderData: FlBorderData(show: false),
+              lineBarsData: [
+                // The red line
+                LineChartBarData(
+                  spots: dummyData1,
+                  isCurved: true,
+                  barWidth: 3,
+                  /*colors: [
+                    Colors.red,
+                  ],*/
+                ),
+                // The orange line
+                LineChartBarData(
+                  spots: dummyData2,
+                  isCurved: true,
+                  barWidth: 3,
+                  /*colors: [
+                    Colors.orange,
+                  ],*/
+                ),
+                // The blue line
+                LineChartBarData(
+                  spots: dummyData3,
+                  isCurved: false,
+                  barWidth: 3,
+                  /*colors: [
+                    Colors.blue,
+                  ],*/
+                )
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
