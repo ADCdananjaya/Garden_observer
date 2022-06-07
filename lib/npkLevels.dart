@@ -31,17 +31,17 @@ class NPK extends StatefulWidget {
 }
 
 class _NPKState extends State<NPK> {
-  final List<FlSpot> dummyData1 = List.generate(8, (index) {
+  final List<FlSpot> dummyData1 = List.generate(7, (index) {
     return FlSpot(index.toDouble(), index * Random().nextDouble());
   });
 
   // This will be used to draw the orange line
-  final List<FlSpot> dummyData2 = List.generate(8, (index) {
+  final List<FlSpot> dummyData2 = List.generate(7, (index) {
     return FlSpot(index.toDouble(), index * Random().nextDouble());
   });
 
   // This will be used to draw the blue line
-  final List<FlSpot> dummyData3 = List.generate(8, (index) {
+  final List<FlSpot> dummyData3 = List.generate(7, (index) {
     return FlSpot(index.toDouble(), index * Random().nextDouble());
   });
 
