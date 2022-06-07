@@ -53,7 +53,7 @@ class _NPKState extends State<NPK> {
       ),
       body: SafeArea(
         child: Container(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(10),
           width: double.infinity,
           child: LineChart(
             LineChartData(
