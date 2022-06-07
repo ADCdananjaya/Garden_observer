@@ -52,7 +52,7 @@ class _NPKState extends State<NPK> {
         title: Text('NPK levels'),
       ),
       body: SafeArea(
-        child: Row(
+        child: Column(
           children: [
             Center(
               child: Text('NPK levels'),
