@@ -3,11 +3,18 @@ import 'package:helloworld/sidebar.dart';
 import 'package:helloworld/home.dart';
 import 'package:helloworld/staff.dart';
 import 'package:helloworld/chat.dart';
-//import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
-  //WidgetsFlutterBinding.ensureInitialized();
-  //await Firebase.initializeApp();
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: FirebaseOptions(
+      apiKey: "AIzaSyB-Q-V1EHGJ-RDUFp7F-SKATmmXJ_qH5GI",
+      appId: "1:686414276230:android:a2ccda7a259460af5c5307",
+      messagingSenderId: "686414276230-5os540kn66p37iunvjtmm2son6746ute.apps.googleusercontent.com",
+      projectId: "garden-backend",
+    ),
+  );
   runApp(const MyApp());
 }
 
