@@ -49,6 +49,9 @@ class _MoistureState extends State<Moisture> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Moisture levels'),
+      ),
       body: StreamBuilder(
         stream: _products.snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot> streamSnapshot) {
