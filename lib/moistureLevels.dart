@@ -46,12 +46,6 @@ class _MoistureState extends State<Moisture> {
   }
 
   @override
-  void initState() {
-    getDocIds();
-    super.initState();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
