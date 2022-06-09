@@ -135,7 +135,7 @@ class GetMoistureLevels {
   }
 
   addData2() {
-    data.add(new SalesData(number, level));
+    data.add(new SalesData(level, number));
   }
 }
 
