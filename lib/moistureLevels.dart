@@ -1,4 +1,5 @@
 import 'package:charts_flutter/flutter.dart' as charts;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 /*
@@ -36,6 +37,19 @@ class Moisture extends StatefulWidget {
 }
 
 class _MoistureState extends State<Moisture> {
+  List<String> docIds = [];
+  Future getDocIds() async {
+    await FirebaseFirestore.instance.collection('moistreLevels').get().then((snapshot) => snapshot.docs.forEach((element) {
+          print(element.reference);
+        }));
+  }
+
+  @override
+  void initState() {
+    getDocIds();
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
