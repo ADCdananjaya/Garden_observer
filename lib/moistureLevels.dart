@@ -60,22 +60,42 @@ class _MoistureState extends State<Moisture> {
               itemCount: streamSnapshot.data!.docs.length,
               itemBuilder: (context, index) {
                 final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[index];
-                GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData();
+                //adding data to a list
+                GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData2();
+                //return listTiel
+                /*
                 return Card(
                   margin: const EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(documentSnapshot['date'].toString()),
-                    /*
-                    title: Text(recordNumber.map((number) {
-                      return Text(number.toString());
-                    }).toString()),
-                    */
+                   
+                    //title: Text(recordNumber.map((number) {
+                    //  return Text(number.toString());
+                    //}).toString()),
+                   
                     subtitle: Text(documentSnapshot['level'].toString()),
-                    /*
-                    subtitle: Text(moistureLevel.map((level) {
-                      return Text(level.toString());
-                    }).toString()),
-                    */
+                   
+                    //subtitle: Text(moistureLevel.map((level) {
+                    //  return Text(level.toString());
+                    //}).toString()),
+                    
+                  ),
+                );
+                */
+                return Container(
+                  padding: EdgeInsets.all(10.0),
+                  child: Column(
+                    children: [
+                      Center(
+                        child: Text('Moisture levels'),
+                      ),
+                      Expanded(
+                        child: new charts.LineChart(
+                          _getSeriesData(),
+                          animate: true,
+                        ),
+                      )
+                    ],
                   ),
                 );
               },
@@ -107,6 +127,10 @@ class GetMoistureLevels {
     recordNumber.add(number);
     moistureLevel.add(level);
   }
+
+  addData2() {
+    data.add(new SalesData(number, level));
+  }
 }
 
 class SalesData {
@@ -116,7 +140,8 @@ class SalesData {
   SalesData(this.year, this.sales);
 }
 
-final data = [
+final List<SalesData> data = [
+  /*
   new SalesData(0, 1600000),
   new SalesData(1, 1735000),
   new SalesData(2, 1678000),
@@ -137,6 +162,7 @@ final data = [
   new SalesData(17, 5589000),
   new SalesData(18, 5940000),
   new SalesData(19, 6367000),
+  */
 ];
 
 _getSeriesData() {
