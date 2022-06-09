@@ -45,42 +45,32 @@ class _MoistureState extends State<Moisture> {
         }));
   }
 
+  final CollectionReference _products = FirebaseFirestore.instance.collection('moistureLevels');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Moisture levels'),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(10.0),
-        child: Column(
-          children: [
-            Center(
-              child: Text('Moisture levels'),
-            ),
-            Expanded(
-              /*
-              child: new charts.LineChart(
-                _getSeriesData(),
-                animate: true,
-              ),
-              */
-              child: FutureBuilder(
-                future: getDocIds(),
-                builder: (context, snapshot) {
-                  return ListView.builder(
-                    itemCount: docIds.length,
-                    itemBuilder: (context, index) {
-                      return ListTile(
-                        title: Text(docIds[index]),
-                      );
-                    },
-                  );
-                },
-              ),
-            )
-          ],
-        ),
+      body: StreamBuilder(
+        stream: _products.snapshots(),
+        builder: (context, AsyncSnapshot<QuerySnapshot> streamSnapshot) {
+          if (streamSnapshot.hasData) {
+            return ListView.builder(
+              itemCount: streamSnapshot.data!.docs.length,
+              itemBuilder: (context, index) {
+                final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[index];
+                return Card(
+                  margin: const EdgeInsets.all(10),
+                  child: ListTile(
+                    title: Text(documentSnapshot['date']),
+                    subtitle: Text(documentSnapshot['level'].toString()),
+                  ),
+                );
+              },
+            );
+          }
+          return const Center(
+            child: CircularProgressIndicator(),
+          );
+        },
       ),
     );
   }
