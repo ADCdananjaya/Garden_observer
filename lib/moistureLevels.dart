@@ -1,8 +1,41 @@
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 
+/*
 class Moisture extends StatelessWidget {
   const Moisture({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Moisture levels'),
+      ),
+      body: Container(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          children: [
+            Center(
+              child: Text('Moisture levels'),
+            ),
+            Expanded(
+              child: new charts.LineChart(
+                _getSeriesData(),
+                animate: true,
+              ),
+            )
+          ],
+        ),
+      ),
+    );
+  }
+}
+*/
+class Moisture extends StatefulWidget {
+  const Moisture({Key? key}) : super(key: key);
+  _MoistureState createState() => _MoistureState();
+}
+
+class _MoistureState extends State<Moisture> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
