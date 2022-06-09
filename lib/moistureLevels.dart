@@ -39,7 +39,7 @@ class Moisture extends StatefulWidget {
 class _MoistureState extends State<Moisture> {
   List<String> docIds = [];
   Future getDocIds() async {
-    await FirebaseFirestore.instance.collection('moistreLevels').get().then((snapshot) => snapshot.docs.forEach((element) {
+    await FirebaseFirestore.instance.collection('moistureLevels').get().then((snapshot) => snapshot.docs.forEach((element) {
           print(element.reference);
           docIds.add(element.reference.id);
         }));
