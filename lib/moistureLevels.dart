@@ -60,7 +60,7 @@ class _MoistureState extends State<Moisture> {
               itemCount: streamSnapshot.data!.docs.length,
               itemBuilder: (context, index) {
                 final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[index];
-                GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).printData();
+                GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData();
                 return Card(
                   margin: const EdgeInsets.all(10),
                   child: ListTile(
