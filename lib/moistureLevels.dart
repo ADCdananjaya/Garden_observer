@@ -64,9 +64,14 @@ class _MoistureState extends State<Moisture> {
                 return Card(
                   margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(documentSnapshot['date'].toString()),
-                    //print(DateFormat('dd-MMM-yyy').format(DateTime.parse(documentSnapshot['date'].toData().toString()))),
-                    subtitle: Text(documentSnapshot['level'].toString()),
+                    //title: Text(documentSnapshot['date'].toString()),
+                    title: Text(recordNumber.map((number) {
+                      return Text(number.toString());
+                    }).toString()),
+                    //subtitle: Text(documentSnapshot['level'].toString()),
+                    subtitle: Text(moistureLevel.map((level) {
+                      return Text(level.toString());
+                    }).toString()),
                   ),
                 );
               },
@@ -92,6 +97,11 @@ class GetMoistureLevels {
   printData() {
     print(number);
     print(level);
+  }
+
+  addData() {
+    recordNumber.add(number);
+    moistureLevel.add(level);
   }
 }
 
