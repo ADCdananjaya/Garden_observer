@@ -56,6 +56,29 @@ class _MoistureState extends State<Moisture> {
         stream: _products.snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot> streamSnapshot) {
           if (streamSnapshot.hasData) {
+            for (int i = 0; i < streamSnapshot.data!.docs.length; i++) {
+              final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[i];
+              GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData2();
+            }
+            ;
+
+            return Container(
+              padding: EdgeInsets.all(10.0),
+              child: Column(
+                children: [
+                  Center(
+                    child: Text('Moisture levels'),
+                  ),
+                  Expanded(
+                    child: new charts.LineChart(
+                      _getSeriesData(),
+                      animate: true,
+                    ),
+                  )
+                ],
+              ),
+            );
+            /*
             return ListView.builder(
               itemCount: streamSnapshot.data!.docs.length,
               itemBuilder: (context, index) {
@@ -80,27 +103,9 @@ class _MoistureState extends State<Moisture> {
                     //}).toString()),
                   ),
                 );
-
-                /*
-                return Container(
-                  padding: EdgeInsets.all(10.0),
-                  child: Column(
-                    children: [
-                      Center(
-                        child: Text('Moisture levels'),
-                      ),
-                      Expanded(
-                        child: new charts.LineChart(
-                          _getSeriesData(),
-                          animate: true,
-                        ),
-                      )
-                    ],
-                  ),
-                );
-                */
               },
             );
+            */
           }
           return const Center(
             child: CircularProgressIndicator(),
