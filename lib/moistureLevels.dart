@@ -71,11 +71,19 @@ class _MoistureState extends State<Moisture> {
                 animate: true,
               ),
               */
-              child: ListView.builder(
-                  itemCount: 3,
-                  itemBuilder: (context, index) {
-                    return ListTile(title: Text('name'));
-                  }),
+              child: FutureBuilder(
+                future: getDocIds(),
+                builder: (context, snapshot) {
+                  return ListView.builder(
+                    itemCount: docIds.length,
+                    itemBuilder: (context, index) {
+                      return ListTile(
+                        title: Text(docIds[index]),
+                      );
+                    },
+                  );
+                },
+              ),
             )
           ],
         ),
