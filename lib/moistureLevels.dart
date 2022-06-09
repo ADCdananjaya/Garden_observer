@@ -63,25 +63,25 @@ class _MoistureState extends State<Moisture> {
                 //adding data to a list
                 GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData2();
                 //return listTiel
-                /*
+
                 return Card(
                   margin: const EdgeInsets.all(10),
                   child: ListTile(
                     title: Text(documentSnapshot['date'].toString()),
-                   
+
                     //title: Text(recordNumber.map((number) {
                     //  return Text(number.toString());
                     //}).toString()),
-                   
+
                     subtitle: Text(documentSnapshot['level'].toString()),
-                   
+
                     //subtitle: Text(moistureLevel.map((level) {
                     //  return Text(level.toString());
                     //}).toString()),
-                    
                   ),
                 );
-                */
+
+                /*
                 return Container(
                   padding: EdgeInsets.all(10.0),
                   child: Column(
@@ -98,6 +98,7 @@ class _MoistureState extends State<Moisture> {
                     ],
                   ),
                 );
+                */
               },
             );
           }
