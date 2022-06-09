@@ -60,7 +60,7 @@ class _MoistureState extends State<Moisture> {
                 return Card(
                   margin: const EdgeInsets.all(10),
                   child: ListTile(
-                    title: Text(documentSnapshot['date']),
+                    title: Text(documentSnapshot['date'].toString),
                     subtitle: Text(documentSnapshot['level'].toString()),
                   ),
                 );
