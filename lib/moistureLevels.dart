@@ -41,6 +41,7 @@ class _MoistureState extends State<Moisture> {
   Future getDocIds() async {
     await FirebaseFirestore.instance.collection('moistreLevels').get().then((snapshot) => snapshot.docs.forEach((element) {
           print(element.reference);
+          docIds.add(element.reference.id);
         }));
   }
 
@@ -64,10 +65,15 @@ class _MoistureState extends State<Moisture> {
               child: Text('Moisture levels'),
             ),
             Expanded(
+              /*
               child: new charts.LineChart(
                 _getSeriesData(),
                 animate: true,
               ),
+              */
+              child: ListView.builder(itemBuilder: (context, index) {
+                return ListTile(title: Text('name'));
+              }),
             )
           ],
         ),
