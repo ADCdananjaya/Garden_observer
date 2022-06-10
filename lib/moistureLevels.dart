@@ -62,13 +62,6 @@ class _MoistureState extends State<Moisture> {
             for (i; i < streamSnapshot.data!.docs.length; i++) {
               final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[i];
               GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData2();
-              /*
-              if (documentSnapshot['recordNumber'] == i) {
-                print('level is: ' + documentSnapshot['level'].toString());
-                print('record number is: ' + documentSnapshot['recordNumber'].toString());
-                print('i is: ' + i.toString());
-              };
-              */
             }
             ;
 
@@ -91,34 +84,6 @@ class _MoistureState extends State<Moisture> {
                 ],
               ),
             );
-            /*
-            return ListView.builder(
-              itemCount: streamSnapshot.data!.docs.length,
-              itemBuilder: (context, index) {
-                final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[index];
-                //adding data to a list
-                GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData2();
-                //return listTiel
-
-                return Card(
-                  margin: const EdgeInsets.all(10),
-                  child: ListTile(
-                    title: Text(documentSnapshot['date'].toString()),
-
-                    //title: Text(recordNumber.map((number) {
-                    //  return Text(number.toString());
-                    //}).toString()),
-
-                    subtitle: Text(documentSnapshot['level'].toString()),
-
-                    //subtitle: Text(moistureLevel.map((level) {
-                    //  return Text(level.toString());
-                    //}).toString()),
-                  ),
-                );
-              },
-            );
-            */
           }
           return const Center(
             child: CircularProgressIndicator(),
@@ -159,30 +124,7 @@ class SalesData {
   SalesData(this.year, this.sales);
 }
 
-final List<SalesData> data = [
-  /*
-  new SalesData(0, 1600000),
-  new SalesData(1, 1735000),
-  new SalesData(2, 1678000),
-  new SalesData(3, 1890000),
-  new SalesData(4, 1907000),
-  new SalesData(5, 2300000),
-  new SalesData(6, 2360000),
-  new SalesData(7, 1980000),
-  new SalesData(8, 2654000),
-  new SalesData(9, 2789070),
-  new SalesData(10, 3020000),
-  new SalesData(11, 3245900),
-  new SalesData(12, 4098500),
-  new SalesData(13, 4500000),
-  new SalesData(14, 4456500),
-  new SalesData(15, 3900500),
-  new SalesData(16, 5123400),
-  new SalesData(17, 5589000),
-  new SalesData(18, 5940000),
-  new SalesData(19, 6367000),
-  */
-];
+final List<SalesData> data = [];
 
 _getSeriesData() {
   List<charts.Series<SalesData, int>> series = [
