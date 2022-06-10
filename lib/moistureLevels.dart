@@ -1,6 +1,7 @@
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:charts_common/common.dart';
 
 int i = 0;
 
@@ -39,7 +40,8 @@ class _MoistureState extends State<Moisture> {
                       _getSeriesData(),
                       animate: true,
                       behaviors: [
-                        new charts.PanAndZoomBehavior()
+                        new charts.ChartTitle('Dimension', behaviorPosition: charts.BehaviorPosition.bottom, titleStyleSpec: chartsCommon.TextStyleSpec(fontSize: 11), titleOutsideJustification: charts.OutsideJustification.middleDrawArea),
+                        new charts.ChartTitle('Dose, mg', behaviorPosition: charts.BehaviorPosition.start, titleStyleSpec: chartsCommon.TextStyleSpec(fontSize: 11), titleOutsideJustification: charts.OutsideJustification.middleDrawArea)
                       ],
                     ),
                   )
