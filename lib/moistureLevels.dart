@@ -2,35 +2,6 @@ import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
-/*
-class Moisture extends StatelessWidget {
-  const Moisture({Key? key}) : super(key: key);
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Moisture levels'),
-      ),
-      body: Container(
-        padding: EdgeInsets.all(10.0),
-        child: Column(
-          children: [
-            Center(
-              child: Text('Moisture levels'),
-            ),
-            Expanded(
-              child: new charts.LineChart(
-                _getSeriesData(),
-                animate: true,
-              ),
-            )
-          ],
-        ),
-      ),
-    );
-  }
-}
-*/
 int i = 0;
 
 class Moisture extends StatefulWidget {
@@ -39,15 +10,6 @@ class Moisture extends StatefulWidget {
 }
 
 class _MoistureState extends State<Moisture> {
-  /*
-  List<String> docIds = [];
-  Future getDocIds() async {
-    await FirebaseFirestore.instance.collection('moistureLevels').get().then((snapshot) => snapshot.docs.forEach((element) {
-          print(element.reference);
-          docIds.add(element.reference.id);
-        }));
-  }
-*/
   final CollectionReference _products = FirebaseFirestore.instance.collection('moistureLevels');
   @override
   Widget build(BuildContext context) {
