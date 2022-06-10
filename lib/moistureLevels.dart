@@ -59,6 +59,8 @@ class _MoistureState extends State<Moisture> {
             for (int i = 0; i < streamSnapshot.data!.docs.length; i++) {
               final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[i];
               GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData2();
+              print('level is: ' + documentSnapshot['level']);
+              print('record number is: ' + documentSnapshot['recordNumber']);
             }
             ;
 
