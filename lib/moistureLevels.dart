@@ -83,6 +83,9 @@ class _MoistureState extends State<Moisture> {
                     child: new charts.LineChart(
                       _getSeriesData(),
                       animate: true,
+                      behaviors: [
+                        new charts.PanAndZoomBehavior()
+                      ],
                     ),
                   )
                 ],
