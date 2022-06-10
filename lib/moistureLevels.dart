@@ -31,6 +31,8 @@ class Moisture extends StatelessWidget {
   }
 }
 */
+int i = 0;
+
 class Moisture extends StatefulWidget {
   const Moisture({Key? key}) : super(key: key);
   _MoistureState createState() => _MoistureState();
@@ -45,7 +47,6 @@ class _MoistureState extends State<Moisture> {
         }));
   }
 
-  int i = 0;
   final CollectionReference _products = FirebaseFirestore.instance.collection('moistureLevels');
   @override
   Widget build(BuildContext context) {
