@@ -40,8 +40,14 @@ class _MoistureState extends State<Moisture> {
                       _getSeriesData(),
                       animate: true,
                       behaviors: [
-                        new charts.ChartTitle('Dimension', behaviorPosition: charts.BehaviorPosition.bottom, titleStyleSpec: chartsCommon.TextStyleSpec(fontSize: 11), titleOutsideJustification: charts.OutsideJustification.middleDrawArea),
-                        new charts.ChartTitle('Dose, mg', behaviorPosition: charts.BehaviorPosition.start, titleStyleSpec: chartsCommon.TextStyleSpec(fontSize: 11), titleOutsideJustification: charts.OutsideJustification.middleDrawArea)
+                        new charts.ChartTitle(
+                          'Dimension',
+                          behaviorPosition: charts.BehaviorPosition.bottom,
+                        ),
+                        new charts.ChartTitle(
+                          'Dose, mg',
+                          behaviorPosition: charts.BehaviorPosition.start,
+                        )
                       ],
                     ),
                   )
