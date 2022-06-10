@@ -63,6 +63,7 @@ class _MoistureState extends State<Moisture> {
               if (documentSnapshot['recordNumber'] == i) {
                 print('level is: ' + documentSnapshot['level'].toString());
                 print('record number is: ' + documentSnapshot['recordNumber'].toString());
+                print('i is: ' + i.toString());
               }
               ;
             }
