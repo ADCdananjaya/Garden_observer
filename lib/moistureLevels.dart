@@ -43,7 +43,7 @@ class _MoistureState extends State<Moisture> {
                       animate: true,
                       behaviors: [
                         new charts.ChartTitle(
-                          'time (hrs)',
+                          'Time (hrs)',
                           behaviorPosition: charts.BehaviorPosition.bottom,
                         ),
                         new charts.ChartTitle(
