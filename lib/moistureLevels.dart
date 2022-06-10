@@ -29,23 +29,25 @@ class _MoistureState extends State<Moisture> {
             ;
 
             return Container(
-              padding: EdgeInsets.all(10.0),
+              padding: EdgeInsets.all(5.0),
               child: Column(
                 children: [
+                  /*
                   Center(
                     child: Text('Moisture levels'),
                   ),
+                  */
                   Expanded(
                     child: new charts.LineChart(
                       _getSeriesData(),
                       animate: true,
                       behaviors: [
                         new charts.ChartTitle(
-                          'Dimension',
+                          'time(hrs)',
                           behaviorPosition: charts.BehaviorPosition.bottom,
                         ),
                         new charts.ChartTitle(
-                          'Dose, mg',
+                          'Moisture Level',
                           behaviorPosition: charts.BehaviorPosition.start,
                         )
                       ],
