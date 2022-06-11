@@ -10,7 +10,7 @@ class Moisture extends StatefulWidget {
 }
 
 class _MoistureState extends State<Moisture> {
-  final CollectionReference _products = FirebaseFirestore.instance.collection('moistureLevels');
+  final CollectionReference _products = FirebaseFirestore.instance.collection('MoistureLevel');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +23,7 @@ class _MoistureState extends State<Moisture> {
           if (streamSnapshot.hasData) {
             for (i; i < streamSnapshot.data!.docs.length; i++) {
               final DocumentSnapshot documentSnapshot = streamSnapshot.data!.docs[i];
-              GetMoistureLevels(documentSnapshot['level'], documentSnapshot['recordNumber']).addData2();
+              GetMoistureLevels(documentSnapshot['levels'], documentSnapshot['count']).addData2();
             }
             ;
 
