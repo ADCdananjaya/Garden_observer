@@ -70,7 +70,7 @@ List<int> moistureLevel = [];
 
 class GetMoistureLevels {
   int number;
-  int level;
+  double level;
 
   GetMoistureLevels(this.number, this.level);
   printData() {
