@@ -130,6 +130,7 @@ class _HomePageState extends State<HomePage> {
                     size: 35,
                   ),
           ),
+          /*
           IconButton(
             enableFeedback: false,
             onPressed: () {
@@ -149,6 +150,7 @@ class _HomePageState extends State<HomePage> {
                     size: 35,
                   ),
           ),
+          */
         ],
       ),
     );
